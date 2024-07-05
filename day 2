@@ -1,0 +1,31 @@
+'''str1 = input(" enter the number of audience in class to greet...")
+print("Hello all {} people in class" .format(str1))
+str1 = "hello !"
+str2 = "welcome"
+str3 = str1+str2
+print(str3)
+i = 10
+j = 20
+k = i+j
+print(k)
+str4 = "hello"
+num = 10
+result = str4 + str(num)
+print(result)
+
+num1 = 10
+print("The number is : ", num1, "The type is : ", type(num1) )
+num2 = 10.15
+print("The number is : ", num2, "The type is : ", type(num2) )
+num3 = 10+5j
+print("The number is : ", num3, "The type is : ", type(num3) ) '''
+
+print(0b101)
+print(0B101)
+print(0B1011)
+print(0b10101)
+print(0b11011001)
+print(0o156)
+print(0xAFB)
+print(0xafb)
+print(0xa)
