@@ -29,3 +29,28 @@ print(0o156)
 print(0xAFB)
 print(0xafb)
 print(0xa)
+
+num1=int(15.77)
+print(num1)
+val=int(-55.88)
+print(val)
+val1=(10+3j)
+print(val1)
+print(type(val1))
+
+import random
+print(random.randrange(20,50)) #generates number in a range 20 to 50
+print(random.random()) #prints any number
+list1 = ["hello", "bye", "hi", "go", "y", "rt"]
+print(random.choice(list1))
+#also has shuffle feature
+random.shuffle(list1)
+print(list1)
+import math as mt
+print(mt.factorial(5))
+print(mt.factorial(4))
+print(mt.pi)
+print(mt.lcm(16,8,2))
+print(mt.log10(1000000))
+print(mt.log2(8))
+print(mt.pow(2,3))
