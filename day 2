@@ -107,3 +107,10 @@ print(dict1["HouseNo"])
 print(dict1.keys())
 print(dict1.values())
 print(dict1.items())
+
+#we can change values too
+dict1["Age"]=25
+print(dict1)
+#we can add values too
+dict1["degree"]="M.tech"
+print(dict1)
