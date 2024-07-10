@@ -1,1 +1,17 @@
+str1="Hello welcome to session 3 in python"
+print(str1)
+str2='Hello welcome to session 3 in python'
+print(str2)
 
+str3="Hello"\
+    "all welcome"\
+    "to my"\
+    "lecture"\
+    "Bye"
+print(str3)
+#this is not the correct way
+str4=''' Hello 
+all 
+welcome to my lecture
+in session 3'''
+print(str4)
