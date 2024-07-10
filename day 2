@@ -54,3 +54,56 @@ print(mt.lcm(16,8,2))
 print(mt.log10(1000000))
 print(mt.log2(8))
 print(mt.pow(2,3))
+
+#sequence data ->list,string & tuple
+#list->very flexible sequence of data as it allows all sort of modifications
+#[]->these brackets create lists
+#data in lists can be of different data types
+#data starts from index position 0
+#characterstics of list ->ordered by position ,mutable can be modified ,repeated or duplicate
+#values are allowed
+list1=[1,2,3,"Hello", "Bye",12.77, True,False,'Go']
+#1->at position 0
+#2->at position 1
+#3-> at position 2
+#Hello -> at position 3
+#if we acess the list from left----->right , then index starts from 0 and so on
+#otherwise if left<--------right , then index starts from -1 position
+#acess the first number of list
+print ("first element :" ,list1[0])
+print ("second element :", list1[1])
+print ("last element :", list1[-1])
+print ("second last element :", list1[-2])
+#tuples
+#sequence of data having order or position of elements but it is immutable i.e. we cannot change it
+#() --> paranthesis are used to denote tuples
+#index starts from 0, when left ---->right & when left<---right ,starts from -1
+#it may contain any types of data
+tup1=(1,2,3,"Hello","bye", True, 12.66)
+print("first element :",tup1[0])
+print("second element:",tup1[1])
+print("last element:", tup1[-1])
+print("second last element :", tup1[-2])
+list1=[1,2,3,"Hello", "Bye",12.77, True,False,'Go']
+tup1=(1,2,3,"Hello","bye", True, 12.66)
+#try to modify list
+print("original list:", list1)
+list1[-1]= 'GoNow'
+print(list1)
+#try to modify tuple
+tup1[-1]=100
+print(tup1)
+#dictionary
+#set
+#create a dictionary
+#braces bracket -->{}
+#values are in form of key:value form
+#each value id recognized by key
+dict1={"Name":"Niharika", "Age":19, "salary":1500000, "HouseNo" :25}
+print(dict1["Age"])
+print(dict1["Name"])
+print(dict1["salary"])
+print(dict1["HouseNo"])
+print(dict1.keys())
+print(dict1.values())
+print(dict1.items())
