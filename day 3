@@ -15,3 +15,64 @@ all
 welcome to my lecture
 in session 3'''
 print(str4)
+
+#slicing and negative slicing in python
+str1="Hello all"
+print("The first element:", str1[0])
+print("The last char:",str1[-1])
+#strings are immutable
+#str1[2]='k'
+#slicing
+print(str1[1:5])
+print(str1[1:6])
+print(str1[1:7])
+print(str1[1:7:1])
+print(str1[1:7:2])
+print(str1[1::2])
+str1="Hello all"
+#Negative slicing
+print(str1[-5:-1])
+print(str1[-1:-5])
+print(str1[-7::2])
+print(str1[::-1])
+
+#string comparison
+#>,<,== -> to check for equality
+str1="Hello"
+str2=("hello")
+print(str1==str2)
+print(str1>str2)
+print(str1<str2)
+#Ascii codes
+#A-Z =65 to 90
+#a-z = 97-122
+#ord()= --> gives asciicodes for characters
+#chr()=--> gives corresponding characters for a given ascii codes
+print(ord('H'))
+print(ord('h'))
+print(chr(65))
+print(chr(97))
+
+#string repeatation
+#* operator to repeat strings multiple times
+str1="Hello"
+print(str1*2)
+print(str1*5)
+#concatenation operator ->(+)
+str1="Hello"
+str2=" "
+str3="All"
+print(str1+str2+str3)
+#find length of number of characterd in a string
+str1="Hello all"
+print("The number of characters in a string are:", len(str1))"""
+#test if a particular character of sub-string is present in a string or not
+#membership test
+str1="Hello dear friends , welcome to my class.."
+#membership test is done by 'in' and 'not in' operators
+#to check 'friend' is present in string or not
+print('friend' in str1)
+print(',' in str1)
+print('....' in str1)
+print('..' in str1)
+print('....' not in str1)
