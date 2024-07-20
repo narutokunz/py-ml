@@ -76,3 +76,45 @@ print(',' in str1)
 print('....' in str1)
 print('..' in str1)
 print('....' not in str1)
+
+#string methods
+str1 ="hello all"
+print(str1.upper())
+print(str1)
+print(str1.lower())
+
+#replace a particular sub-string inside a string to create a new string
+str1="Hello all students welcome here"
+new_string = str1.replace('all', 'all the')
+print("original string :", str1)
+print("New string:",new_string)
+
+#how to find if a particular sub-string is present or not
+#find() -> returns the starting index of sub-string if present else if the substring is not present then returns -1
+str1="Hello all students welcome here"
+print(str1.find('people'))
+print(str1.find('students'))
+print(str1.find('student in class'))
+
+#index() -> finds the index of a substring. If a substring is absent then it will raise an error
+str1="Hello all students welcome here"
+#print(str1.index('people'))
+print(str1.index('students'))
+print(str1.index('student in class'))
+
+#to slice or split or cut the string
+#split()
+str1="Hello all students welcome here"
+print(str1.split()) #splits using separator and default separator is ' '
+str2="Hello ,all, students welcome, here"
+print(str2.split(','))
+#to restrict 1 time splitting
+#syntax: split(separator '', max_number of splits)
+print(str2.split(',',1))
+
+#strip()
+#to remove spaces from text string specific leading and trailing
+str1="               Hello           all, students   welcome,here      "
+print(str1.strip())
+print(str1.lstrip())
+print(str1.rstrip())
