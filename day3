@@ -84,3 +84,231 @@ print("Updated list:",list1)
 
 list1[2:5]=[30, "hello all", "Bye all", 11]
 print("Updated list:",list1)
+
+#create a simple list
+list1 = [1,2,3,4,"abc","hello",True, False,11.89, 4+5j]
+print("The list is:", list1)
+
+#create a blank list
+list2 =[] #empty list
+print(list2)
+
+#list here in python is also a class. A list object can be also instantiate by list class
+#constructor by invoking list()
+
+str1 = "Hello All!"
+#to convert this string directly to list we can invoke list()
+New_list = list(str1)
+print("The newly formed list is:", New_list)
+
+#properties of list :
+#1. Ordered
+#2. Mutable
+#3. Allows repeated values i.e. duplicates
+
+#1.ordered
+#each element of list has an index position attached
+list1 = [1,2,3,"Hello", "Bye",3+7j ,11.4]
+#start access from left to right
+print("First element:", list1[0])
+print("second element:", list1[1])
+print("Fifth element:", list1[4])
+print("Last element:", list1[-1])
+print("Second last element:", list1[-2])
+
+#slice and negative slice a list
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+#slice list from index 1 to 6
+print("slice from index 1 to 6:", list1[1:6]) #printing from 1 to 5
+print("Negative slice from last position to second element:", list1[1:])
+print("Negative slice from second last position to second element:", list1[1:-1])
+print("Negative slice from second last position to second element:", list1[-6:-1])
+print("Negative slice from second last position to second element:", list1[-6:-1:-1])
+print("The list in reverse:", list1[::-1])
+print("The number of elements in list: ", len(list1))
+
+#2. Mutable : you can modify elements , add and remove elements from list
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+
+#to add a new element at the end of the list append()
+list1.append('New value')
+print("The appended list:", list1)
+
+#to dd new elements at a specific position in list insert()
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+print("the original list:", list1)
+list1.insert(3,20)
+print("updated list:", list1)
+
+#you can add a new values from another list into original list extend()
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+print("Original list:", list1)
+list2 =[7,8,9,'Go']
+list1.extend(list2)
+
+print("Updated list:",list1)
+print("list 2 values:", list2)
+#list concate
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+list2 =[7,8,9,'Go']
+print("List concatenation:",list1+list2)
+
+#list repeatation
+print("List repeat:",list1*3)
+
+#operators common for sequences :+ , *, [:]
+#make modifications in list
+#we can change a particular list element
+
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+print("Original list:", list1)
+#update the third element of the list 3-->30
+list1[2]=30
+print("Updated list:",list1)
+
+list1[2:5]=[30, "hello all", "Bye all"]
+print("Updated list:",list1)
+
+list1[2:5]=[30, "hello all", "Bye all", 11]
+print("Updated list:",list1)
+
+#remove elements from list
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4]
+print("Original list:", list1)
+#remove a particular element of value "Hello"
+#remove()
+list1.remove("Hello")
+print("Updated list:", list1)
+
+list1.remove("Hello")
+print("Updated list:", list1)
+
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4, "Hello", "Hello"]
+list1.remove("Hello")
+print("Updated list:", list1)
+
+
+list1.remove("Hello")
+print("Updated list:", list1)
+
+
+list1.remove("Hello")
+print("Updated list:", list1)
+
+#count occurence of elements
+list1 = [1,2,3,"Hello", "Bye",3+7j,11.4, "Hello", "Hello"]
+print("original list:", list1)
+print("The count of occurence of 'Hello :", list1.count("Hello"))
+
+# sort a list
+list1=[3,5,1,7,9,2,4,5,5,6,10,7,1,1]
+list1.sort() #sorting in ascending order
+print("The sorted list:", list1)
+
+#sort in descending order or reverse order
+list1.sort(reverse=True)
+print("The reverse sorted list:", list1)
+
+#create a copy of list copy()
+list1=[3,5,1,7,9,2,4,5,5,6,10,7,1,1]
+print("Original list:", list1)
+new_list= list1.copy()
+print("The new list:", new_list)
+#to check if both these lists are same or not
+print(list1==new_list)
+
+#Tuple : is a sequence similar to lists but with some differences:
+#1.List is mutable but Tuple is Immutable
+#2.List starts with [] while tuple starts with ()
+#3. There is a fairly good number of methods in list while only 2 methods for Tuple
+
+#create a Tuple
+tup1 =(1,2,3,"Hello","Bye", 11.55,True,False, 5+2j)
+print("The original Tuple:", tup1)
+
+#we have a tuple constructor tuple()
+new_tuple =tuple(('Hello','Bye', 1,2,3,"Go", 22.55))
+print("New Tuple:", new_tuple)
+
+new_tuple =tuple(['Hello','Bye', 1,2,3,"Go", 22.55])
+print("New Tuple:", new_tuple)
+
+#or you can directly
+
+list1= ['Hello','Bye', 1,2,3,"Go", 22.55]
+new_tuple = tuple(list1)
+print("New tuple from list:", new_tuple)
+
+#same you can do with list
+tup1=(1,2,3,"Hello","Bye", 11.55, True, False, 5+2j)
+list1 =list(tup1)
+print("List from tuple:", list1)
+str1="Hello all!"
+new_tuple = tuple(str1)
+print("Tuple from string:", new_tuple)
+
+#empty or blank tuple
+tup1=()
+print("The tup1 is:", tup1, "type of tup1:", type(tup1))
+#create a tuple with only single value
+tup1 = ("Hello")
+print("The tup1 is :", tup1, "Tye of tup1 :", type(tup1))
+tup1= (25)
+print("The tup1 is:", tup1, "The type is:", type(tup1))
+
+#singleton tuples
+list1= [22]
+print("The list is :", list1, "The type is:", type(tup1))
+#default structure
+
+values = 1,2,3,4,"go", 11.77,True
+print("The values are:", values , "Type of values :", type(values))
+
+#properties for tuples
+#1. Ordered
+#2. Immutablity
+#3. allows duplicate values
+
+
+
+
+#set is mutable
+#to add elements in set use add()
+set1= {1,2,3,4,5,6,7,8,9,10}
+print("Original set:", set1)
+set1.add(55)
+print("Updated set:", set1)
+set1.add(99)
+print("Updated set:", set1)
+
+#update method ()--> to add elements from another list of tuple in a set
+
+set1= {1,2,3,4,5,6,7,8,9,10}
+print("Original set:", set1)
+list1= [11,22,33,44,55]
+set1.update(list1)
+print("updated set:", set1)
+tup1 =(999,888,666)
+set1.update(tup1)
+print("Updated set:", set1)
+set2= {2222,4444}
+set1.update(set2)
+print("updated set:", set1)
+#remove values from set
+
+set1= {1,2,3,4,5,6,7,8,9,10}
+print("Original s et:", set1)
+#discard() #remove()
+#remove() removes a particular value from set and throws error if value not find
+set1.remove(5)
+print("updated set:", set1)
+#set1.remove(5)
+#print("updated set:", set1)
+
+set1= {1,2,3,4,5,6,7,8,9,10}
+print("Original s et:", set1)
+
+set1.discard(5)
+print("updated set:", set1)
+set1.discard(5)
+print("updated set:", set1)
